@@ -12,29 +12,30 @@
 </head>
 <body>
     <div class="container-fluid">
-        <header class="container-fluid p-5 mb-4 text-center">
+        <header class="row text-center">
             <h1 class="display-1 bg-dark text-white">Weather Dashboard</h1>
         </header>
-        <section class="container">
-            <div class="row">
-                <div class="col-md-4 text-center search-history">
-                    <section class="search-bar">
-                        <h2>Search For a City:</h2>
-                        <textarea class="container-fluid city" placeholder="City"></textarea>
-                        <button class="container-fluid">Submit</button>
-                    </section>
-                    <section class="history">
-                        <ul></ul>
-                    </section>
-                </div>
-                <div class="col-md-8 weather-info">
-                    <section class="jumbotron jumbotron-fluid border border-dark displayed-city"> filler
-                    </section>
-                    <h2 class="forecast">5-Day Forecast</h2>
-                    <ul class="d-flex flex-row 5-day-forecast"></ul>
-                </div>
+        
+        <div class="row">
+            <div class="col-sm-3 col-lg-2 search-history">
+                <section class="search-bar">
+                    <h2>Search For a City:</h2>
+                    <input class=" mb-2 container-fluid city" placeholder="City"></input>
+                    <button class="container-fluid">Submit</button>
+                </section>
+                <section class="history">
+                    <ul></ul>
+                </section>
             </div>
-        </section>
+            <div class="col-sm-9 col-lg-10 weather-info">
+                <section class="row border border-dark displayed-city">
+                    <h2 id="location"></h2>
+                </section>
+                <h2 class="text-decoration-underline" class="forecast">5-Day Forecast</h2>
+                <ul class="d-flex flex-row 5-day-forecast"></ul>
+            </div>
+        </div>
+        
     </div>
     <script src="./assets/js/script.js"></script>
 </body>
