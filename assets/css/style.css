@@ -1,0 +1,38 @@
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.custom-navbar {
+    background: linear-gradient(to right, #4558b6, #261360) !important;
+}
+
+#search-button, #search-history button {
+    width: 100%;
+}
+
+.history-btn {
+    border-color: #aeaeae;
+    background-color: #aeaeae;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+#search-button {
+    background: #6991e3;
+}
+
+#current-weather {
+    height: 150px;
+    padding: 20px;
+}
+
+.forecast {
+    width: 18%;
+    height: 200px;
+}
+
+hr {
+    border-top: 1px solid lightgrey;
+}
